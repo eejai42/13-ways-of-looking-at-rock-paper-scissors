@@ -193,6 +193,9 @@ public static class RPSHelper {
     }
 }```</PolePrompt>
     <Directory>W01</Directory>
+    <RelativePathToFish>/ConsoleApp1/bin/Debug/net7.0/W01-CSharp-Concrete-Fish.exe</RelativePathToFish>
+    <RelativePathToDynamicFish>/W01-Dynamic-Fish/bin/Debug/net7.0/W01-CSharp-Dynamic-Fish.exe</RelativePathToDynamicFish>
+    <RelativePathToFishingPole>/W01-Dynamic-Fish/bin/Debug/net7.0/W01-CSharp-Dynamic-Fish.exe</RelativePathToFishingPole>
   </WaysOfLooking>
   <WaysOfLooking>
     <Name>W02-Fsharp</Name>
@@ -209,6 +212,9 @@ public static class RPSHelper {
 
 **Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.</PolePrompt>
     <Directory>W02</Directory>
+    <RelativePathToFish>/FSharp-Concrete-Fish\bin\Debug\net7.0\W02-FSharp-Concrete-Fish.exe</RelativePathToFish>
+    <RelativePathToDynamicFish>/W02-Dynamic-Fish\bin\Debug\net7.0\W02-FSharp-Dynamic-Fish.exe</RelativePathToDynamicFish>
+    <RelativePathToFishingPole>/W02-FSharp-FishingPole/bin/Debug/net7.0/W02-FSharp-Fishing-Pole.exe</RelativePathToFishingPole>
   </WaysOfLooking>
   <WaysOfLooking>
     <Name>W03-Python</Name>
@@ -225,6 +231,9 @@ public static class RPSHelper {
 
 **Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.</PolePrompt>
     <Directory>W03</Directory>
+    <RelativePathToFish>/PythonApplication1\PythonApplication1.py</RelativePathToFish>
+    <RelativePathToDynamicFish>/W03-Python-Dynamic-Fish\W03_Pyton_Dynamic_Fish.py</RelativePathToDynamicFish>
+    <RelativePathToFishingPole>/PythonApplicationWithSSoT\Main.py</RelativePathToFishingPole>
   </WaysOfLooking>
   <WaysOfLooking>
     <Name>W04-Java</Name>
@@ -257,6 +266,9 @@ public static class RPSHelper {
 
 **Plase Note:** This is the ChatGPT Prompt that produceded the **Xslt Script CreateHelper.xslt** that produces the **RPSHelper.xyz** file on build.</PolePrompt>
     <Directory>W05</Directory>
+    <RelativePathToFish>/VisualBasicConsoleApp1\bin\Debug\net7.0\W05-VisualBasic-Concrete-Fish.exe</RelativePathToFish>
+    <RelativePathToDynamicFish>/W05-VisualBasic-Dynamic-Fish\bin\Debug\net7.0\W05-VisualBasic-Dynamic-Fish.exe</RelativePathToDynamicFish>
+    <RelativePathToFishingPole>/VisualBasicConsoleAppWithSSoT\bin\Debug\net7.0\W05-VisualBasic-Fishing-Pole.exe</RelativePathToFishingPole>
   </WaysOfLooking>
   <WaysOfLooking>
     <Name>W06-CSharpOOP</Name>

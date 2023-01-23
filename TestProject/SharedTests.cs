@@ -45,12 +45,17 @@ Total Score: 47";
         public virtual void Setup()
         {
             this.ExpectedOutput = this.ExpectedOutput1.ToLower();
-            this.RootPath = "C:/Users/auto1/go/src/github.com/eejai42/rock-paper-scissors/";
+            this.RootPath = "C:/Users/auto1/go/src/github.com/eejai42/rock-paper-scissors/WaysOfLooking/";
         }
 
         internal string Invoke(string relativePathToExecutable, string args = "", int timeout = 30)
         {
-            var fullPathToExecutable = Path.Combine(this.RootPath, relativePathToExecutable.Trim("//".ToCharArray()));
+            var fullPathToExecutable = Path.Combine(this.RootPath, relativePathToExecutable.Trim("\\/".ToCharArray()));
+            if (fullPathToExecutable.EndsWith(".py"))
+            {
+                args = fullPathToExecutable;
+                fullPathToExecutable = "python";
+            }
             var process = new Process
             {
                 StartInfo = new ProcessStartInfo
