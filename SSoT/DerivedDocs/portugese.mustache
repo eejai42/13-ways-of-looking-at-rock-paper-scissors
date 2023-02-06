@@ -1,0 +1,48 @@
+﻿{{name}}
+Os Elfos começam a montar acampamento na praia. Para decidir cuja barraca ficará mais perto do armazenamento de lanches, um torneio gigante de {{name}} já está em andamento.
+
+{{name}} é um jogo entre dois jogadores. Cada jogo contém muitas rodadas; em cada rodada, os jogadores escolhem simultaneamente uma das opções Pedra, Papel ou Tesoura, usando uma forma de mão. Em seguida, um vencedor para aquela rodada é selecionado: Pedra ganha contra Tesoura, Papel ganha contra Pedra, Tesoura ganha contra Papel. Se ambos os jogadores escolherem a mesma forma, a rodada termina em empate.
+
+Formas e Resultados
+Há {{rules.shapes.length}} formas. Elas são:
+
+{{#rules.shapes}}
+{{name}} (código oponente: {{opp_code}}, código jogador: {{player_code}}, ganha contra: {{wins_against}}, pontuação: {{score}}),
+{{/rules.shapes}}
+
+Os resultados de pontuação são:
+
+Vitória: {{rules.outcomes.win}}
+Derrota: {{rules.outcomes.loss}}
+Empate: {{rules.outcomes.draw}}
+As Regras
+Agradecido pela ajuda de ontem, um Elfo lhe dá um guia de estratégia criptografado (seu input de quebra-cabeça) que eles dizem que certamente o ajudarão a vencer. "A primeira coluna é o que o oponente vai jogar:
+
+{{#rules.shapes}}
+{{opp_code}} para {{name}},
+{{/rules.shapes}} ... e a segunda coluna é o que você deve jogar em resposta:
+{{#rules.shapes}}
+{{player_code}} para {{name}},
+{{/rules.shapes}}
+Vencer sempre seria suspeito, então as respostas devem ter sido cuidadosamente escolhidas.
+
+O vencedor de todo o torneio é o jogador com a maior pontuação. Sua pontuação total é a soma de suas pontuações em cada rodada. A pontuação para uma única rodada é a pontuação para a forma que você escolheu
+({{#rules.shapes}}{{name}} = {{score}},{{/rules.shapes}}) mais a pontuação para o resultado da rodada (vitória = 6, derrota = 0, empate = 3).
+
+Desde que você não pode ter certeza se o Elf está tentando ajudá-lo ou enganá-lo, você deve calcular a pontuação que você obteria se seguisse o guia de estratégia.
+
+Jogo de exemplo
+Desde que você não pode ter certeza se o Elf está tentando ajudá-lo ou enganá-lo, você deve calcular a pontuação que você obteria se seguisse o guia de estratégia.
+
+Por exemplo, suponha que você tenha recebido o seguinte guia de estratégia:
+
+{{#rules.games.rounds}}
+{{opp_code}} {{player_code}}
+{{/rules.games.rounds}}
+Este guia de estratégia prevê e recomenda o seguinte:
+
+{{#rules.games.rounds}}
+O oponente escolheu {{rules.shapes[#../shapes].name}} (código {{opp_code}}), o jogador escolheu {{rules.shapes[#../shapes].name}} (código {{player_code}}) a rodada foi {{result}}, com uma pontuação de {{score}} pontuação de escolha: {{choice_score}}, pontuação de resultado: {{outcome_score}}
+{{/rules.games.rounds}}
+
+A pontuação final é: {{rules.games.score}}

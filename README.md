@@ -1,13 +1,46 @@
 # 13 ways of Looking at Rock, Paper, Scissors 
-## ... actually ... it's more like 7K+ with _AI Capture_
+## ... actually ... it's more like 9K+ with _AI Capture_
+
+```
+     13 Ways to describe Rock Paper Scissors 
+          - English
+          - Json
+          - Xml
+          - YAML
+          - etc)
+   x 13 Variations of the Game 
+          - Rock, Paper, Scissors
+          - Rock, Paper, Scissors, Lizard, Spock 
+          - Wizard, Sourcer, Druid
+          - etc ...   
+  = 169 possible starting game/description variations
+
+  +   n custom variations
+  
+  =   1 single-source-of-truth.json
+```
+
+  Then - with AI Capture, we can replay logic and skills previously described by ChatGPT and captured with AI Capture.  
+  
+  Each time the *SSoT* changes, we can Replay all of the skills captured resulting in over 55 different languages and implementations of whatever game is described by the Single Source of Truth.  This includes products in
 
 ```
     13 different languages    
-   * 3 Ways that ChatGPT Writes the Code (per language)
-   + 2 Additional Tools - The Fluid README.md and Unit Tests that "follow along"
-  * 13 Ways to describe Rock Paper Scissors (English, Json, Xml, YAML, etc)
-  * 13 Variations of the Game (Rock, Paper, Scissors, Lizard, Spock or Wizard, Sourcer, Druid)
-  = 7000+ possible variations of the game, all in a single repository.
+         - c#
+         - f#
+         - python
+         - java
+         - neo4j graph
+         - uml diagrams                  
+   * 3 Ways that ChatGPT Wrote the Code (per language)
+         - Hard Coded implementation of the prompt
+         - Dynamic version that uses the json file at runtime to determine the shapes/scores/outcomes.
+         - A "fishing pole" tool that, given the SSoT can transform the ssot.json into the Hard-Coded version, on demand
+   + 15 Additional Tools - The Fluid README.md, translated into 13 different languages, and Unit Tests that "follow along"
+
+   = 50+ target languages, environments and technical contexts, per 139 starting game variations.
+
+   = 9000+
 ```
 
 ### Code your Own Adventure

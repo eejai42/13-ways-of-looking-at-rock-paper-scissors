@@ -13,7 +13,7 @@ type RockPaperScissors struct {
 func NewRockPaperScissors() *RockPaperScissors {
 	r := &RockPaperScissors{}
 
-	file, err := ioutil.ReadFile("C:/Users/auto1/go/src/github.com/eejai42/rock-paper-scissors/SSoT/rps.json")
+	file, err := ioutil.ReadFile("C:/Users/auto1/go/src/github.com/eejai42/13-ways-of-looking-at-rock-paper-scissors/SSoT/rps.json")
 	if err != nil {
 		fmt.Println(err)
 		return nil
@@ -39,7 +39,6 @@ func (r *RockPaperScissors) GetStrategyGuide() string {
 		r := round.(map[string]interface{})
 		strategyGuide += r["opp_code"].(string) + " " + r["player_code"].(string) + "\n"
 	}
-	// fmt.Printf("STRATEGY GUID: %v", strategyGuide)
 	return strategyGuide
 }
 
@@ -58,16 +57,15 @@ func (r *RockPaperScissors) CalculateGameScore(strategyGuide string) int {
 func (r *RockPaperScissors) CalculateRoundScore(opponentChoice rune, playerChoice rune) int {
 	outcomes := r.gameJson["rules"].(map[string]interface{})["outcomes"].(map[string]interface{})
 	shapes := r.gameJson["rules"].(map[string]interface{})["shapes"].([]interface{})
-	// fmt.Printf("SHAPES: %v - %c, %c", shapes, opponentChoice, playerChoice)
+	// fmt.Printf("SHAPES: %v - %v, %v", shapes, opponentChoice, playerChoice)
 	var opponentShape, playerShape map[string]interface{}
 	for _, shape := range shapes {
-		shape2 := shape.(map[string]interface{})
-
-		if string(opponentChoice) == shape2["opp_code"] {
-			opponentShape = shape2
+		shapeMap := shape.(map[string]interface{})
+		if string(opponentChoice) == shapeMap["opp_code"] {
+			opponentShape = shapeMap
 		}
-		if string(playerChoice) == shape2["player_code"] {
-			playerShape = shape2
+		if string(playerChoice) == shapeMap["player_code"] {
+			playerShape = shapeMap
 		}
 	}
 

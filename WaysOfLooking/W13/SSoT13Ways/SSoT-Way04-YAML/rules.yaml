@@ -1,37 +1,26 @@
 yaml:
-  options:
-  - id: Rock
-    code1: X
-    code2: A
-    value: 1
+    options:
+      - id: Knight
+        code1: K
+        code2: k
+        value: 6
+      - id: Archer
+        code1: A
+        code2: a
+        value: 2
+      - id: Mage
+        code1: M
+        code2: m
+        value: 3
 
+    win_lose_draw: 8-3-5
 
-  - id: Paper
-    code1: Y
-    code2: B
-    value: 2
-
-
-  - id: Scissors
-    code1: Z
-    code2: C
-    value: 3
-
-  
-  win_lose_draw: 6-0-3
-    
-  tests:
-    id: unit_test_1
-    test_cases:
-    - code1: Y
-      code2: A
-
-
-    - code1: X
-      code2: B
-
-
-    - code1: Z
-      code2: C
-
-
+    tests:
+      id: unit_test_1
+      test_cases:
+      - code1: K
+        code2: a
+      - code1: A
+        code2: m
+      - code1: M
+        code2: m

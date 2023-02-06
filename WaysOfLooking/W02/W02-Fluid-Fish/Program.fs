@@ -4,7 +4,7 @@ open System.IO
 
 module RockPaperScissors =
     let gameJson =
-        let jsonString = File.ReadAllText("C:/Users/auto1/go/src/github.com/eejai42/rock-paper-scissors/SSoT/rps.json")
+        let jsonString = File.ReadAllText("C:/Users/auto1/go/src/github.com/eejai42/13-ways-of-looking-at-rock-paper-scissors/SSoT/rps.json")
         let jo = JObject.Parse(jsonString)
         jo.["rock-paper-scissors"]
 

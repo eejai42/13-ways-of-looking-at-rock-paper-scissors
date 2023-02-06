@@ -7,8 +7,8 @@ namespace TestProject
 {
     public partial class SharedTests
     {
-        public static string RPSJsonFileName { get => "C:/Users/auto1/go/src/github.com/eejai42/rock-paper-scissors/SSoT/rps.json"; }
-        public static string WaysOfLookingRootPath { get => "C:/Users/auto1/go/src/github.com/eejai42/rock-paper-scissors/WaysOfLooking/"; }
+        public static string RPSJsonFileName { get => "C:/Users/auto1/go/src/github.com/eejai42/13-ways-of-looking-at-rock-paper-scissors/SSoT/rps.json"; }
+        public static string WaysOfLookingRootPath { get => "C:/Users/auto1/go/src/github.com/eejai42/13-ways-of-looking-at-rock-paper-scissors/WaysOfLooking/"; }
         private static dynamic jsonObject;
 
         static SharedTests()
@@ -51,6 +51,11 @@ namespace TestProject
             {
                 args = fullPathToExecutable;
                 fullPathToExecutable = "python";
+            }
+            if (fullPathToExecutable.EndsWith(".js"))
+            {
+                args = fullPathToExecutable;
+                fullPathToExecutable = "node";
             }
             if (fullPathToExecutable.EndsWith(".go"))
             {

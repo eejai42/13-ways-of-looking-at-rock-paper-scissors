@@ -8,7 +8,7 @@ class RockPaperScissors
 
     static RockPaperScissors()
     {
-        string jsonString = File.ReadAllText("C:/Users/auto1/go/src/github.com/eejai42/rock-paper-scissors/SSoT/rps.json");
+        string jsonString = File.ReadAllText("C:/Users/auto1/go/src/github.com/eejai42/13-ways-of-looking-at-rock-paper-scissors/SSoT/rps.json");
         var jo = JObject.Parse(jsonString);
         gameJson = JObject.Parse(jo["rock-paper-scissors"].ToString());
     }

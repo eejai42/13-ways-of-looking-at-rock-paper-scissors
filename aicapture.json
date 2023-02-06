@@ -557,6 +557,127 @@
       "Name": "XmlXsltTransform",
       "RelativePath": "/SSoT/DerivedDocs/Chinese",
       "CommandLine": "xml-xslt-transform -i ../../rps.xml -i ../CreateChineseDocs.xslt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "ProjectTranspilerId": "3dc9229d-8656-4a29-b34c-8b061e385405",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/WaysOfLooking/W10/Fishing-Pole",
+      "CommandLine": "xml-xslt-transform -i ../../../SSoT/rps.xml -i CreateNeo4JFishingPole.xslt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "ProjectTranspilerId": "bcad143c-182c-4524-aeb8-fea2b2bd370c",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/SSoT/DerivedDocs/French",
+      "CommandLine": "xml-xslt-transform -i ../../rps.xml -i ../CreateFrenchDocs.xslt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "ProjectTranspilerId": "dfadaf16-db2b-4ead-82b5-dbcbd63a7385",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/SSoT/DerivedDocs/German",
+      "CommandLine": "xml-xslt-transform -i ../../rps.xml -i ../CreateGermanDocs.xslt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "ProjectTranspilerId": "7d266bc8-81ca-4b1d-9a7d-a6a083f0dac2",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/SSoT/DerivedDocs/Greek",
+      "CommandLine": "xml-xslt-transform -i ../../rps.xml -i ../CreateGreekDocs.xslt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "ProjectTranspilerId": "d31c6fe6-5efc-4b4c-af89-8d3217b156b7",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/SSoT/DerivedDocs/Korean",
+      "CommandLine": "xml-xslt-transform -i ../../rps.xml -i ../CreateKoreanDocs.xslt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "a480d796-4909-49a3-9bf6-e2e872481d22",
+        "Name": "JsonToMustache",
+        "Description": "Turns a json + a mustache template into the parsed output from the Mustache Library."
+      },
+      "ProjectTranspilerId": "ff2761a5-adf6-4d8c-a2a2-f6f224973352",
+      "Name": "JsonToMustache",
+      "RelativePath": "/SSoT/DerivedDocs/Russian",
+      "CommandLine": "json-to-mustache -i ..\\..\\rps.json -i .\\..\\russian.mustache -o ../../../docs/README-07-Russian.md"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "a480d796-4909-49a3-9bf6-e2e872481d22",
+        "Name": "JsonToMustache",
+        "Description": "Turns a json + a mustache template into the parsed output from the Mustache Library."
+      },
+      "ProjectTranspilerId": "c66cd5e4-75e5-43a5-8e9d-0cbe6e1d8346",
+      "Name": "JsonToMustache",
+      "RelativePath": "/SSoT/DerivedDocs/Old-English",
+      "CommandLine": "json-to-mustache -i ..\\..\\rps.json -i .\\..\\old-english.mustache -o ../../../docs/README-08-Old-English.md"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "a480d796-4909-49a3-9bf6-e2e872481d22",
+        "Name": "JsonToMustache",
+        "Description": "Turns a json + a mustache template into the parsed output from the Mustache Library."
+      },
+      "ProjectTranspilerId": "6ac4cdb6-b82e-4f3f-95e7-8f5dfd611682",
+      "Name": "JsonToMustache",
+      "RelativePath": "/SSoT/DerivedDocs/Swedish",
+      "CommandLine": "json-to-mustache -i ../../rps.json -i ..\\swedish.mustache -p rock-paper-scissors -o ../../../docs/README-13-swedish.md"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "a480d796-4909-49a3-9bf6-e2e872481d22",
+        "Name": "JsonToMustache",
+        "Description": "Turns a json + a mustache template into the parsed output from the Mustache Library."
+      },
+      "ProjectTranspilerId": "9c920eda-2426-4786-a4b4-d43aaca83019",
+      "Name": "JsonToMustache",
+      "RelativePath": "/SSoT/DerivedDocs/Portugese",
+      "CommandLine": "json-to-mustache -i ../../rps.json -i ..\\portugese.mustache -p rock-paper-scissors -o ../../../docs/README-09-Portugese.md"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "a480d796-4909-49a3-9bf6-e2e872481d22",
+        "Name": "JsonToMustache",
+        "Description": "Turns a json + a mustache template into the parsed output from the Mustache Library."
+      },
+      "ProjectTranspilerId": "b2f322c8-5278-4b99-baca-ae8178f6fd9f",
+      "Name": "JsonToMustache",
+      "RelativePath": "/SSoT/DerivedDocs/Italian",
+      "CommandLine": "json-to-mustache -i ../../rps.json -i ..\\italian.mustache -p rock-paper-scissors -o ../../../docs/README-12-Italian.md"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "a480d796-4909-49a3-9bf6-e2e872481d22",
+        "Name": "JsonToMustache",
+        "Description": "Turns a json + a mustache template into the parsed output from the Mustache Library."
+      },
+      "ProjectTranspilerId": "67e74a60-7e14-430f-a90c-c3b25cd0c964",
+      "Name": "JsonToMustache",
+      "RelativePath": "/SSoT/DerivedDocs/Hebrew",
+      "CommandLine": "json-to-mustache -i ../../rps.json -i ..\\hebrew.mustache -p rock-paper-scissors -o ../../../docs/README-11-Hebrew.md"
     }
   ]
 }

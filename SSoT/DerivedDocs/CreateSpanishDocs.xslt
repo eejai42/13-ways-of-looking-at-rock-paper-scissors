@@ -5,7 +5,7 @@
         <FileSet>
             <FileSetFiles>
                 <FileSetFile>
-                    <RelativePath>../../../README-03-Spanish.md</RelativePath>
+                    <RelativePath>../../../docs/README-03-Spanish.md</RelativePath>
                     <xsl:element name="FileContents" xml:space="default">
                         <xsl:text># </xsl:text>
                         <xsl:value-of select="*/name"/>
@@ -132,7 +132,7 @@ Como no puedes estar seguro de si el Elf está tratando de ayudarte o engañarte
 
     <xsl:template match="games">
         <xsl:text>&#10;### </xsl:text>
-        <xsl:value-of select="nombre"/>
+        <xsl:value-of select="name"/>
         <xsl:text>
 
 Como no puedes estar seguro si el Elf está tratando de ayudarte o engañarte, debes calcular la puntuación que obtendrías si sigues la guía de estrategia.
@@ -155,24 +155,24 @@ Por ejemplo, supongamos que se te ha dado la siguiente guía de estrategia:
 </xsl:text>
         <xsl:for-each select="rounds">
             <xsl:text>- El oponente eligió </xsl:text>
-            <xsl:value-of select="//shapes[opp_code=current()/opp_code]/nombre"/>
+            <xsl:value-of select="//shapes[opp_code=current()/opp_code]/name"/>
             <xsl:text> (código </xsl:text>
             <xsl:value-of select="opp_code"/>
             <xsl:text>), el jugador eligió </xsl:text>
-            <xsl:value-of select="//shapes[player_code=current()/player_code]/nombre"/>
+            <xsl:value-of select="//shapes[player_code=current()/player_code]/name"/>
             <xsl:text> (código </xsl:text>
             <xsl:value-of select="player_code"/>
             <xsl:text>)</xsl:text>
             <xsl:text>&#10;</xsl:text>
             <xsl:text>la ronda fue un </xsl:text>
-            <xsl:value-of select="resultado"/>
+            <xsl:value-of select="result"/>
             <xsl:text>, con una puntuación de </xsl:text>
-            <xsl:value-of select="puntuación"/>
+            <xsl:value-of select="score"/>
             <xsl:text>&#10;</xsl:text>
             <xsl:text>      puntuación de elección: </xsl:text>
-            <xsl:value-of select="puntuación_elección"/>
+            <xsl:value-of select="choice_score"/>
             <xsl:text>, puntuación de resultado: </xsl:text>
-            <xsl:value-of select="puntuación_resultado"/>
+            <xsl:value-of select="outcome_score"/>
             <xsl:text>&#10;</xsl:text>
         </xsl:for-each>
         <xsl:text>La puntuación final es: </xsl:text>

@@ -1,0 +1,49 @@
+﻿{{name}}
+Älvorna börjar sätta upp läger på stranden. För att avgöra vems tält som får stå närmast snacksförvaringen pågår redan en stor {{name}}-turnering.
+
+{{name}} är ett spel mellan två spelare. Varje spel innehåller många omgångar; i varje omgång väljer spelarna samtidigt en av Rock, Papper, Sax genom att använda en handform. Därefter väljs en vinnare för den omgången: Rock vinner mot Sax, Papper vinner mot Rock, Sax vinner mot Papper. Om båda spelarna väljer samma form, avslutas omgången istället med en oavgjort.
+
+former och utfall
+Det finns {{rules.shapes.length}} former. De är:
+
+{{#rules.shapes}}
+{{name}} (motsvarande kod: {{opp_code}}, spelarkod: {{player_code}}, vinner mot: {{wins_against}}, poäng: {{score}}),
+{{/rules.shapes}}
+
+Utfallspoängen är:
+
+Vinst: {{rules.outcomes.win}}
+Förlust: {{rules.outcomes.loss}}
+Oavgjort: {{rules.outcomes.draw}}
+Reglerna
+Tackfull för din hjälp igår ger en älv dig en krypterad strategiguide (ditt pusselinput) som de säger kommer att säkerställa att du vinner. "Den första kolumnen är vad din motståndare kommer att spela:
+
+{{#rules.shapes}}
+{{opp_code}} för {{name}},
+{{/rules.shapes}} ... och den andra kolumnen är vad du ska spela som svar:
+{{#rules.shapes}}
+{{player_code}} för {{name}},
+{{/rules.shapes}}
+Att vinna varje gång skulle vara misstänkt, så svar måste ha valts noga.
+
+Vinnaren av hela turneringen är spelaren med högsta poäng. Din totala poäng är summan av dina poäng för varje omgång. Poängen för en enskild omgång är poängen för formen du valde
+({{#rules.shapes}}{{name}} = {{score}},{{/rules.shapes}}) plus poängen för utfallet av omgången (vinst = 6, förlust = 0, oavgjort = 3).
+
+Eftersom du inte kan vara säker på om Alven försöker hjälpa dig eller lura dig, bör du räkna ut poängen du skulle få om du skulle följa strategiguiden.
+
+Exempel Spel
+Eftersom du inte kan vara säker på om Alven försöker hjälpa dig eller lura dig, bör du räkna ut poängen du skulle få om du skulle följa strategiguiden.
+
+Till exempel, anta att du fick följande strategiguide:
+
+{{#rules.games.rounds}}
+{{opp_code}} {{player_code}}
+{{/rules.games.rounds}}
+Denna strategiguide förutspår och rekommenderar följande:
+
+{{#rules.games.rounds}}
+Motståndaren valde {{rules.shapes[#../shapes].name}} (kod {{opp_code}}), spelaren valde {{rules.shapes[#../shapes].name}} (kod {{player_code}}) omgången var en {{result}}, med en poäng på {{score}} val poäng: {{choice_score}}, utfall poäng: {{outcome_score}}
+{{/rules.games.rounds}}
+
+Den sista poängen är: {{rules.games.score}}
+

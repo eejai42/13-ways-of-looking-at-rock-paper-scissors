@@ -5,7 +5,7 @@ class RockPaperScissors:
     game_json = {}
 
     def __init__(self):
-        with open("C:/Users/auto1/go/src/github.com/eejai42/rock-paper-scissors/SSoT/rps.json", "r") as json_file:
+        with open("C:/Users/auto1/go/src/github.com/eejai42/13-ways-of-looking-at-rock-paper-scissors/SSoT/rps.json", "r") as json_file:
             jo = json.load(json_file)
             self.game_json = jo["rock-paper-scissors"]
 

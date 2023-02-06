@@ -31,13 +31,13 @@ class RockPaperScissors
         int outcomeScore = 0;
         switch (playerChoice)
         {
-            case 'X':
+            case 'X': // Rock
                 shapeScore = 1;
                 break;
-            case 'Y':
+            case 'Y': // Paper
                 shapeScore = 2;
                 break;
-            case 'Z':
+            case 'Z': // Scissors
                 shapeScore = 3;
                 break;
         }

@@ -11,7 +11,7 @@ public class RockPaperScissors {
 
     static {
         try {
-            File jsonFile = new File("C:/Users/auto1/go/src/github.com/eejai42/rock-paper-scissors/SSoT/rps.json");
+            File jsonFile = new File("C:/Users/auto1/go/src/github.com/eejai42/13-ways-of-looking-at-rock-paper-scissors/SSoT/rps.json");
             Scanner sc = new Scanner(jsonFile);
             String jsonString = "";
             while(sc.hasNextLine()){
