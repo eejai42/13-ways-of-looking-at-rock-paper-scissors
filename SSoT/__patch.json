@@ -1,0 +1,7 @@
+[
+    {
+        "op": "replace",
+        "path": "/rock-paper-scissors/rules/shapes/0/score",
+        "value": 1
+    }
+]
