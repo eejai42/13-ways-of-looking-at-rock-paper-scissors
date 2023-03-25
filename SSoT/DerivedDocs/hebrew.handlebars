@@ -44,8 +44,9 @@
 {{/rules.games.rounds}}
 המדריך הזה מניח וממליץ על הבא:
 
-{{#rules.games.rounds}}
-האויב בחר ב-{{rules.shapes[#../shapes].name}} (קוד {{opp_code}}), השחקן בחר ב-{{rules.shapes[#../shapes].name}} (קוד {{player_code}}) הסיבוב היה {{result}}, עם ניקוד של {{score}} ניקוד בחירה: {{choice_score}}, ניקוד תוצאה: {{outcome_score}}
-{{/rules.games.rounds}}
 
 הניקוד הסופי הוא: {{rules.games.score}}
+
+{{#rules.games.rounds}}
+האויב בחר ב-{{../shapes.name}} (קוד {{opp_code}}), השחקן בחר ב-{{../shapes.name}} (קוד {{player_code}}) הסיבוב היה {{result}}, עם ניקוד של {{score}} ניקוד בחירה: {{choice_score}}, ניקוד תוצאה: {{outcome_score}}
+{{/rules.games.rounds}}

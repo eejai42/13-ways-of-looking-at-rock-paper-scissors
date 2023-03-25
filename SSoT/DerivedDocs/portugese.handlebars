@@ -1,16 +1,16 @@
-﻿{{name}}
+﻿# {{name}}
 Os Elfos começam a montar acampamento na praia. Para decidir cuja barraca ficará mais perto do armazenamento de lanches, um torneio gigante de {{name}} já está em andamento.
 
 {{name}} é um jogo entre dois jogadores. Cada jogo contém muitas rodadas; em cada rodada, os jogadores escolhem simultaneamente uma das opções Pedra, Papel ou Tesoura, usando uma forma de mão. Em seguida, um vencedor para aquela rodada é selecionado: Pedra ganha contra Tesoura, Papel ganha contra Pedra, Tesoura ganha contra Papel. Se ambos os jogadores escolherem a mesma forma, a rodada termina em empate.
 
-Formas e Resultados
+## Formas e Resultados
 Há {{rules.shapes.length}} formas. Elas são:
 
 {{#rules.shapes}}
 {{name}} (código oponente: {{opp_code}}, código jogador: {{player_code}}, ganha contra: {{wins_against}}, pontuação: {{score}}),
 {{/rules.shapes}}
 
-Os resultados de pontuação são:
+## Os resultados de pontuação são:
 
 Vitória: {{rules.outcomes.win}}
 Derrota: {{rules.outcomes.loss}}
@@ -31,7 +31,7 @@ O vencedor de todo o torneio é o jogador com a maior pontuação. Sua pontuaç�
 
 Desde que você não pode ter certeza se o Elf está tentando ajudá-lo ou enganá-lo, você deve calcular a pontuação que você obteria se seguisse o guia de estratégia.
 
-Jogo de exemplo
+## Jogo de exemplo
 Desde que você não pode ter certeza se o Elf está tentando ajudá-lo ou enganá-lo, você deve calcular a pontuação que você obteria se seguisse o guia de estratégia.
 
 Por exemplo, suponha que você tenha recebido o seguinte guia de estratégia:
@@ -42,7 +42,7 @@ Por exemplo, suponha que você tenha recebido o seguinte guia de estratégia:
 Este guia de estratégia prevê e recomenda o seguinte:
 
 {{#rules.games.rounds}}
-O oponente escolheu {{rules.shapes[#../shapes].name}} (código {{opp_code}}), o jogador escolheu {{rules.shapes[#../shapes].name}} (código {{player_code}}) a rodada foi {{result}}, com uma pontuação de {{score}} pontuação de escolha: {{choice_score}}, pontuação de resultado: {{outcome_score}}
+O oponente escolheu {{../shapes.name}} (código {{opp_code}}), o jogador escolheu {{../shapes.name}} (código {{player_code}}) a rodada foi {{result}}, com uma pontuação de {{score}} pontuação de escolha: {{choice_score}}, pontuação de resultado: {{outcome_score}}
 {{/rules.games.rounds}}
 
 A pontuação final é: {{rules.games.score}}

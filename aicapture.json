@@ -615,69 +615,69 @@
     },
     {
       "MatchedTranspiler": {
-        "TranspilerId": "a480d796-4909-49a3-9bf6-e2e872481d22",
-        "Name": "JsonToMustache",
-        "Description": "Turns a json + a mustache template into the parsed output from the Mustache Library."
+        "TranspilerId": "4c68b433-200b-4fc1-94d1-e58cbc76c511",
+        "Name": "JsonToHandlebars",
+        "Description": "JsonToHandlebars"
       },
       "ProjectTranspilerId": "ff2761a5-adf6-4d8c-a2a2-f6f224973352",
-      "Name": "JsonToMustache",
+      "Name": "JsonToHandlebars",
       "RelativePath": "/SSoT/DerivedDocs/Russian",
-      "CommandLine": "json-to-mustache -i ..\\..\\rps.json -i .\\..\\russian.mustache -o ../../../docs/README-07-Russian.md"
+      "CommandLine": "json-to-handlebars -i ..\\..\\rps.json -i .\\..\\russian.handlebars -p root-node='rock-paper-scissors' -o ../../../docs/README-07-Russian.md"
     },
     {
       "MatchedTranspiler": {
-        "TranspilerId": "a480d796-4909-49a3-9bf6-e2e872481d22",
-        "Name": "JsonToMustache",
-        "Description": "Turns a json + a mustache template into the parsed output from the Mustache Library."
+        "TranspilerId": "4c68b433-200b-4fc1-94d1-e58cbc76c511",
+        "Name": "JsonToHandlebars",
+        "Description": "JsonToHandlebars"
       },
       "ProjectTranspilerId": "c66cd5e4-75e5-43a5-8e9d-0cbe6e1d8346",
-      "Name": "JsonToMustache",
+      "Name": "JsonToHandlebars",
       "RelativePath": "/SSoT/DerivedDocs/Old-English",
-      "CommandLine": "json-to-mustache -i ..\\..\\rps.json -i .\\..\\old-english.mustache -o ../../../docs/README-08-Old-English.md"
+      "CommandLine": "json-to-handlebars -i ..\\..\\rps.json -i .\\..\\old-english.handlebars -p root-node='rock-paper-scissors'  -o ../../../docs/README-08-Old-English.md"
     },
     {
       "MatchedTranspiler": {
-        "TranspilerId": "a480d796-4909-49a3-9bf6-e2e872481d22",
-        "Name": "JsonToMustache",
-        "Description": "Turns a json + a mustache template into the parsed output from the Mustache Library."
+        "TranspilerId": "4c68b433-200b-4fc1-94d1-e58cbc76c511",
+        "Name": "JsonToHandlebars",
+        "Description": "JsonToHandlebars"
       },
       "ProjectTranspilerId": "6ac4cdb6-b82e-4f3f-95e7-8f5dfd611682",
-      "Name": "JsonToMustache",
+      "Name": "JsonToHandlebars",
       "RelativePath": "/SSoT/DerivedDocs/Swedish",
-      "CommandLine": "json-to-mustache -i ../../rps.json -i ..\\swedish.mustache -p rock-paper-scissors -o ../../../docs/README-13-swedish.md"
+      "CommandLine": "json-to-handlebars -i ../../rps.json -i ..\\swedish.handlebars -p root-node='rock-paper-scissors'  -o ../../../docs/README-13-swedish.md"
     },
     {
       "MatchedTranspiler": {
-        "TranspilerId": "a480d796-4909-49a3-9bf6-e2e872481d22",
-        "Name": "JsonToMustache",
-        "Description": "Turns a json + a mustache template into the parsed output from the Mustache Library."
+        "TranspilerId": "4c68b433-200b-4fc1-94d1-e58cbc76c511",
+        "Name": "JsonToHandlebars",
+        "Description": "JsonToHandlebars"
       },
       "ProjectTranspilerId": "9c920eda-2426-4786-a4b4-d43aaca83019",
-      "Name": "JsonToMustache",
+      "Name": "JsonToHandlebars",
       "RelativePath": "/SSoT/DerivedDocs/Portugese",
-      "CommandLine": "json-to-mustache -i ../../rps.json -i ..\\portugese.mustache -p rock-paper-scissors -o ../../../docs/README-09-Portugese.md"
+      "CommandLine": "json-to-handlebars -i ../../rps.json -i ..\\portugese.handlebars -p root-node='rock-paper-scissors'  -o ../../../docs/README-09-Portugese.md"
     },
     {
       "MatchedTranspiler": {
-        "TranspilerId": "a480d796-4909-49a3-9bf6-e2e872481d22",
-        "Name": "JsonToMustache",
-        "Description": "Turns a json + a mustache template into the parsed output from the Mustache Library."
+        "TranspilerId": "4c68b433-200b-4fc1-94d1-e58cbc76c511",
+        "Name": "JsonToHandlebars",
+        "Description": "JsonToHandlebars"
       },
       "ProjectTranspilerId": "b2f322c8-5278-4b99-baca-ae8178f6fd9f",
-      "Name": "JsonToMustache",
+      "Name": "JsonToHandlebars",
       "RelativePath": "/SSoT/DerivedDocs/Italian",
-      "CommandLine": "json-to-mustache -i ../../rps.json -i ..\\italian.mustache -p rock-paper-scissors -o ../../../docs/README-12-Italian.md"
+      "CommandLine": "json-to-handlebars -i ../../rps.json -i ..\\italian.handlebars -p root-node='rock-paper-scissors'  -o ../../../docs/README-12-Italian.md"
     },
     {
       "MatchedTranspiler": {
-        "TranspilerId": "a480d796-4909-49a3-9bf6-e2e872481d22",
-        "Name": "JsonToMustache",
-        "Description": "Turns a json + a mustache template into the parsed output from the Mustache Library."
+        "TranspilerId": "4c68b433-200b-4fc1-94d1-e58cbc76c511",
+        "Name": "JsonToHandlebars",
+        "Description": "JsonToHandlebars"
       },
       "ProjectTranspilerId": "67e74a60-7e14-430f-a90c-c3b25cd0c964",
-      "Name": "JsonToMustache",
+      "Name": "JsonToHandlebars",
       "RelativePath": "/SSoT/DerivedDocs/Hebrew",
-      "CommandLine": "json-to-mustache -i ../../rps.json -i ..\\hebrew.mustache -p rock-paper-scissors -o ../../../docs/README-11-Hebrew.md"
+      "CommandLine": "json-to-handlebars -i ../../rps.json -i ..\\hebrew.handlebars -p root-node='rock-paper-scissors'  -o ../../../docs/README-11-Hebrew.md"
     }
   ]
 }

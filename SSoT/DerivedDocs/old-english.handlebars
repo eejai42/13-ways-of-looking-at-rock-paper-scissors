@@ -44,7 +44,7 @@ For example, suppose you were given the following strategy guide:
 This strategy guide predicts and recommends the following:
 
 {{#rules.games.rounds}}
-Opponent chose {{rules.shapes[#../shapes].name}} (code {{opp_code}}), player chose {{rules.shapes[#../shapes].name}} (code {{player_code}}) the round was a {{result}}, with a score of {{score}} choice score: {{choice_score}}, outcome score: {{outcome_score}}
+Opponent chose {{../shapes.name}} (code {{opp_code}}), player chose {{../shapes.name}} (code {{player_code}}) the round was a {{result}}, with a score of {{score}} choice score: {{choice_score}}, outcome score: {{outcome_score}}
 {{/rules.games.rounds}}
 
 The final score is: {{rules.games.score}}

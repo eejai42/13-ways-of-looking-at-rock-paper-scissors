@@ -9,3 +9,5 @@
 **/node_modules/**/*
 /**/**.user
 **/*.pyc
+AICapture/Backup/*.zip
+AICapture/Transcripts/*.json

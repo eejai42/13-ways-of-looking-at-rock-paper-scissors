@@ -1,16 +1,16 @@
-Rock, Paper, Scissors
+# Rock, Paper, Scissors
 Os Elfos começam a montar acampamento na praia. Para decidir cuja barraca ficará mais perto do armazenamento de lanches, um torneio gigante de Rock, Paper, Scissors já está em andamento.
 
 Rock, Paper, Scissors é um jogo entre dois jogadores. Cada jogo contém muitas rodadas; em cada rodada, os jogadores escolhem simultaneamente uma das opções Pedra, Papel ou Tesoura, usando uma forma de mão. Em seguida, um vencedor para aquela rodada é selecionado: Pedra ganha contra Tesoura, Papel ganha contra Pedra, Tesoura ganha contra Papel. Se ambos os jogadores escolherem a mesma forma, a rodada termina em empate.
 
-Formas e Resultados
+## Formas e Resultados
 Há 3 formas. Elas são:
 
 Rock (código oponente: A, código jogador: X, ganha contra: C, pontuação: 1),
 Paper (código oponente: B, código jogador: Y, ganha contra: A, pontuação: 2),
 Scissors (código oponente: C, código jogador: Z, ganha contra: B, pontuação: 3),
 
-Os resultados de pontuação são:
+## Os resultados de pontuação são:
 
 Vitória: 6
 Derrota: 0
@@ -32,7 +32,7 @@ O vencedor de todo o torneio é o jogador com a maior pontuação. Sua pontuaç�
 
 Desde que você não pode ter certeza se o Elf está tentando ajudá-lo ou enganá-lo, você deve calcular a pontuação que você obteria se seguisse o guia de estratégia.
 
-Jogo de exemplo
+## Jogo de exemplo
 Desde que você não pode ter certeza se o Elf está tentando ajudá-lo ou enganá-lo, você deve calcular a pontuação que você obteria se seguisse o guia de estratégia.
 
 Por exemplo, suponha que você tenha recebido o seguinte guia de estratégia:
